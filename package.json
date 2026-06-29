@@ -1,0 +1,26 @@
+{
+  "name": "shopnest-mern-project",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "install-all": "npm install && cd backend && npm install && cd frontend/vite-project && npm install",
+    "build": "cd frontend/vite-project && npm run build",
+    "start": "cd backend && npm run dev",
+    "dev": "concurrently -n client,server -c bgBlue,bgYellow \"npm run client\" \"npm run server\"",
+    "client": "cd frontend/vite-project && npm run dev",
+    "server": "cd backend && npm run dev",
+    "seed": "cd backend && npm run seed"
+  },
+  "keywords": [],
+  "author": "Akshat Yadav",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "@reduxjs/toolkit": "^2.12.0",
+    "@tailwindcss/vite": "^4.3.0",
+    "concurrently": "^9.2.1",
+    "react-icons": "^5.6.0",
+    "react-redux": "^9.3.0",
+    "tailwindcss": "^4.3.0"
+  }
+}
