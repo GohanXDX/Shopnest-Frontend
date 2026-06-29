@@ -23,7 +23,7 @@ The repository is organized into a root project folder with separate `backend` a
   - `utils/` - helper utilities such as email and file sending
   - `upload/` - local upload storage folder
 
-- `frontend/vite-project/`
+- `frontend/`
   - `src/` - React source code
     - `App.jsx` - main application component
     - `main.jsx` - frontend entrypoint
